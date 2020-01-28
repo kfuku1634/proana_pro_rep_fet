@@ -1,0 +1,201 @@
+TARGET=./img/angle_all.eps \
+./img/angle_for_helix_in_1jump_loop.eps \
+./img/angle_for_helix_NOT_in_1jump_loop.eps \
+./img/angle_for_helix_in_1jump_loop_cross.eps \
+./img/angle_for_helix_in_1jump_loop_NOT_cross.eps \
+./img/angle_1jump_NOT_cross_ac.eps \
+./img/angle_1jump_NOT_cross_aa.eps \
+./img/angle_1jump_NOT_cross_ax.eps \
+./img/angle_1jump_NOT_cross_cx.eps \
+./img/angle_1jump_NOT_cross_ax_powerpoint.eps \
+./img/angle_1jump_NOT_cross_cx_powerpoint.eps \
+./img/132++-_cc.eps \
+./img/132++-_ac.eps \
+./img/213+--_cc.eps \
+./img/213+--_ac.eps \
+./img/132++-_cx.eps \
+./img/132++-_ax.eps \
+./img/213+--_cx.eps \
+./img/213+--_ax.eps \
+./img/132++-.eps    \
+./img/213+--.eps    \
+./img/213++-.eps    \
+./img/132+--.eps    \
+./img/213++-_cx.eps  \
+./img/132+--_cx.eps  \
+./img/213++-_ax.eps  \
+./img/213+--_ax_L.eps \
+./img/213+--_ax_R.eps \
+./img/132+--_ax_L.eps \
+./img/132+--_ax_R.eps \
+
+all:$(TARGET) ./hairpin_data_anal_for_simu_this_dir.py ./hairpin_run.py
+
+./img/213+--_ax_R.eps:../213+--_ax_R.fet 
+	python3 hairpin_run.py ../213+--_ax_R.fet  >./data/213+--_ax_R.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_ax_R.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_ax_R.dat -o img -p
+
+./img/213+--_ax_L.eps:../213+--_ax_L.fet 
+	python3 hairpin_run.py ../213+--_ax_L.fet  >./data/213+--_ax_L.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_ax_L.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_ax_L.dat -o img -p
+
+./img/132+--_ax_R.eps:../132+--_ax_R.fet 
+	python3 hairpin_run.py ../132+--_ax_R.fet  >./data/132+--_ax_R.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132+--_ax_R.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132+--_ax_R.dat -o img -p
+
+./img/132+--_ax_L.eps:../132+--_ax_L.fet 
+	python3 hairpin_run.py ../132+--_ax_L.fet  >./data/132+--_ax_L.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132+--_ax_L.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132+--_ax_L.dat -o img -p
+
+./img/213++-_ax.eps:../213++-_ax.fet 
+	python3 hairpin_run.py ../213++-_ax.fet  >./data/213++-_ax.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213++-_ax.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213++-_ax.dat -o img -p
+./img/132+--_ax.eps:../132+--_ax.fet 
+	python3 hairpin_run.py ../132+--_ax.fet  >./data/132+--_ax.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132+--_ax.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132+--_ax.dat -o img -p
+
+./img/213++-_cx.eps:../213++-_cx.fet 
+	python3 hairpin_run.py ../213++-_cx.fet  >./data/213++-_cx.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213++-_cx.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213++-_cx.dat -o img -p
+./img/132+--_cx.eps:../132+--_cx.fet 
+	python3 hairpin_run.py ../132+--_cx.fet  >./data/132+--_cx.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132+--_cx.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132+--_cx.dat -o img -p
+
+./img/213++-.eps:../213++-.fet 
+	python3 hairpin_run.py ../213++-.fet  >./data/213++-.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213++-.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213++-.dat -o img -p
+./img/132+--.eps:../132+--.fet 
+	python3 hairpin_run.py ../132+--.fet  >./data/132+--.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132+--.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132+--.dat -o img -p
+
+./img/213+--.eps:../213+--.fet 
+	python3 hairpin_run.py ../213+--.fet  >./data/213+--.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--.dat -o img -p
+./img/132++-.eps:../132++-.fet 
+	python3 hairpin_run.py ../132++-.fet  >./data/132++-.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132++-.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132++-.dat -o img -p
+
+./img/132++-_cx.eps:../132++-_cx.fet 
+	python3 hairpin_run.py ../132++-_cx.fet  >./data/132++-_cx.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132++-_cx.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132++-_cx.dat -o img -p
+
+./img/132++-_ax.eps:../132++-_ax.fet 
+	python3 hairpin_run.py ../132++-_ax.fet  >./data/132++-_ax.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132++-_ax.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132++-_ax.dat -o img -p
+
+./img/213+--_cx.eps:../213+--_cx.fet 
+	python3 hairpin_run.py ../213+--_cx.fet  >./data/213+--_cx.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_cx.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_cx.dat -o img -p
+
+./img/213+--_ax.eps:../213+--_ax.fet 
+	python3 hairpin_run.py ../213+--_ax.fet  >./data/213+--_ax.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_ax.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_ax.dat -o img -p
+
+
+
+./img/132++-_cc.eps:../132++-_cc.fet 
+	python3 hairpin_run.py ../132++-_cc.fet  >./data/132++-_cc.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132++-_cc.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132++-_cc.dat -o img -p
+
+./img/132++-_ac.eps:../132++-_ac.fet 
+	python3 hairpin_run.py ../132++-_ac.fet  >./data/132++-_ac.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132++-_ac.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/132++-_ac.dat -o img -p
+
+./img/213+--_cc.eps:../213+--_cc.fet 
+	python3 hairpin_run.py ../213+--_cc.fet  >./data/213+--_cc.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_cc.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_cc.dat -o img -p
+
+./img/213+--_ac.eps:../213+--_ac.fet 
+	python3 hairpin_run.py ../213+--_ac.fet  >./data/213+--_ac.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_ac.dat -o img 
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/213+--_ac.dat -o img -p
+
+./img/angle_1jump_NOT_cross_ax_powerpoint.eps :./data/angle_1jump_NOT_cross_ax.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/angle_1jump_NOT_cross_ax.dat -o img -p
+./img/angle_1jump_NOT_cross_cx_powerpoint.eps :./data/angle_1jump_NOT_cross_cx.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/angle_1jump_NOT_cross_cx.dat -o img -p
+
+./img/angle_1jump_NOT_cross_cx.eps :./data/angle_1jump_NOT_cross_cx.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/angle_1jump_NOT_cross_cx.dat -o img
+./data/angle_1jump_NOT_cross_cx.dat:./data/angle_1jump_NOT_cross_cc.dat ./data/angle_1jump_NOT_cross_ca.dat
+	cat ./data/angle_1jump_NOT_cross_cc.dat ./data/angle_1jump_NOT_cross_ca.dat>./data/angle_1jump_NOT_cross_cx.dat
+
+./data/angle_1jump_NOT_cross_cc.dat:../132++-_cc.fet ../213+--_cc.fet 
+	python3 hairpin_run.py ../132++-_cc.fet  >./data/angle_1jump_NOT_cross_cc.dat
+	python3 hairpin_run.py ../213+--_cc.fet  >>./data/angle_1jump_NOT_cross_cc.dat
+./data/angle_1jump_NOT_cross_ca.dat:../132++-_ca.fet ../213+--_ca.fet 
+	python3 hairpin_run.py ../132++-_ca.fet  >./data/angle_1jump_NOT_cross_ca.dat
+	python3 hairpin_run.py ../213+--_ca.fet  >>./data/angle_1jump_NOT_cross_ca.dat
+
+./img/angle_1jump_NOT_cross_ax.eps :./data/angle_1jump_NOT_cross_ax.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/angle_1jump_NOT_cross_ax.dat -o img
+
+./img/angle_1jump_NOT_cross_ac.eps :./data/angle_1jump_NOT_cross_ac.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/angle_1jump_NOT_cross_ac.dat -o img
+./data/angle_1jump_NOT_cross_ac.dat:../132++-_ac.fet ../213+--_ac.fet 
+	python3 hairpin_run.py ../132++-_ac.fet  >./data/angle_1jump_NOT_cross_ac.dat
+	python3 hairpin_run.py ../213+--_ac.fet  >>./data/angle_1jump_NOT_cross_ac.dat
+
+./img/angle_1jump_NOT_cross_aa.eps :./data/angle_1jump_NOT_cross_aa.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py ./data/angle_1jump_NOT_cross_aa.dat -o img
+./data/angle_1jump_NOT_cross_aa.dat: ../132++-_aa.fet ../213+--_aa.fet 
+	python3 hairpin_run.py ../132++-_aa.fet  >./data/angle_1jump_NOT_cross_aa.dat
+	python3 hairpin_run.py ../213+--_aa.fet  >>./data/angle_1jump_NOT_cross_aa.dat
+
+./img/angle_for_helix_in_1jump_loop_cross.eps :./data/angle_for_helix_in_1jump_loop_cross.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py data/angle_for_helix_in_1jump_loop_cross.dat -o img
+./data/angle_for_helix_in_1jump_loop_cross.dat:../protein_rep_ig_1jump_cross.fet
+	python3 hairpin_run.py ../protein_rep_ig_1jump_cross.fet  >./data/angle_for_helix_in_1jump_loop_cross.dat
+
+./img/angle_for_helix_in_1jump_loop_NOT_cross.eps :./data/angle_for_helix_in_1jump_loop_NOT_cross.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py data/angle_for_helix_in_1jump_loop_NOT_cross.dat -o img
+./data/angle_for_helix_in_1jump_loop_NOT_cross.dat:../protein_rep_ig_1jump_NOT_cross.fet
+	python3 hairpin_run.py ../protein_rep_ig_1jump_NOT_cross.fet >./data/angle_for_helix_in_1jump_loop_NOT_cross.dat
+
+./data/angle_all.dat:
+	python3 hairpin_run.py ../protein_rep_ig_1jump.fet >./data/angle_all.dat
+	
+./img/angle_all.eps :./data/angle_all.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py data/angle_all.dat -o img
+./img/angle_for_helix_in_1jump_loop.eps :./data/angle_for_helix_in_1jump_loop.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py data/angle_for_helix_in_1jump_loop.dat -o img
+./img/angle_for_helix_NOT_in_1jump_loop.eps :./data/angle_for_helix_NOT_in_1jump_loop.dat
+	python3 hairpin_data_anal_for_simu_this_dir.py data/angle_for_helix_NOT_in_1jump_loop.dat -o img
+
+./data/angle_for_helix_in_1jump_loop.dat:./data/angle_1jump_NOT_cross_ax.dat ./data/angle_1jump_cross_ax.dat
+	cat ./data/angle_1jump_NOT_cross_ax.dat ./data/angle_1jump_cross_ax.dat> ./data/angle_for_helix_in_1jump_loop.dat
+
+./data/angle_for_helix_NOT_in_1jump_loop.dat:./data/angle_1jump_NOT_cross_cx.dat ./data/angle_1jump_cross_cx.dat
+	cat ./data/angle_1jump_NOT_cross_cx.dat ./data/angle_1jump_cross_cx.dat> ./data/angle_for_helix_NOT_in_1jump_loop.dat
+
+./data/angle_1jump_cross_cx.dat: ../1jump_cross_cx.fet
+	python3 hairpin_run.py ../1jump_cross_cx.fet >./data/angle_1jump_cross_cx.dat
+./data/angle_1jump_cross_ax.dat: ../1jump_cross_ax.fet
+	python3 hairpin_run.py ../1jump_cross_ax.fet >./data/angle_1jump_cross_ax.dat
+
+./data/angle_1jump_NOT_cross_ax.dat:../1jump_NOT_cross_ax.fet
+	python3 hairpin_run.py ../1jump_NOT_cross_ax.fet >./data/angle_1jump_NOT_cross_ax.dat
+
+echo:
+	@echo $(TARGET)
+clean:
+	rm $(TARGET) data/*.dat

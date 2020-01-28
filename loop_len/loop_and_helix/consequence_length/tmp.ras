@@ -1,0 +1,8 @@
+load /Users/kouki/db/protein_rep/d1iloa_.ent
+wireframe off
+color group
+cartoon on
+select 36 and *.cb
+spacefill on
+select 54 and *.cb
+spacefill on

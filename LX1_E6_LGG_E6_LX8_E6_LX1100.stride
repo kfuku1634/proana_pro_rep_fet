@@ -1,0 +1,88 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  LX1_E6_LGG_E6_LX8_E6_LX1100.pdb F                                     ~~~~
+REM                                                                        ~~~~
+REM                .         .         .                                   ~~~~
+SEQ  1    VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV                       30          ~~~~
+STR       TTEEEEEETTEEEEEETTTGGG  EEEEE                                    ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  310Helix     VAL    20 F      VAL     22 F                            ~~~~
+LOC  Strand       VAL     3 F      VAL      8 F                            ~~~~
+LOC  Strand       VAL    11 F      VAL     16 F                            ~~~~
+LOC  Strand       VAL    25 F      VAL     29 F                            ~~~~
+LOC  TurnVIII     VAL     1 F      VAL      4 F                            ~~~~
+LOC  TurnIV       VAL     7 F      VAL     10 F                            ~~~~
+LOC  TurnI'       VAL     8 F      VAL     11 F                            ~~~~
+LOC  TurnI        VAL    17 F      VAL     20 F                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  VAL F    1    1    T          Turn    360.00   -179.92     111.2      ~~~~
+ASG  VAL F    2    2    T          Turn    -92.05    -14.17      30.6      ~~~~
+ASG  VAL F    3    3    E        Strand   -120.30    128.06       5.4      ~~~~
+ASG  VAL F    4    4    E        Strand   -121.79    120.97      88.6      ~~~~
+ASG  VAL F    5    5    E        Strand   -121.86    154.05      25.9      ~~~~
+ASG  VAL F    6    6    E        Strand   -135.80    126.15      52.2      ~~~~
+ASG  VAL F    7    7    E        Strand   -110.69    123.48      39.2      ~~~~
+ASG  VAL F    8    8    E        Strand   -132.01    133.32      66.1      ~~~~
+ASG  VAL F    9    9    T          Turn     52.64     43.66     104.9      ~~~~
+ASG  VAL F   10   10    T          Turn     78.82      6.26     115.8      ~~~~
+ASG  VAL F   11   11    E        Strand   -123.62    145.69      65.1      ~~~~
+ASG  VAL F   12   12    E        Strand    -97.64    124.58      94.1      ~~~~
+ASG  VAL F   13   13    E        Strand   -106.85    106.92      84.5      ~~~~
+ASG  VAL F   14   14    E        Strand   -128.62    140.80      78.2      ~~~~
+ASG  VAL F   15   15    E        Strand   -120.39    130.58      82.8      ~~~~
+ASG  VAL F   16   16    E        Strand   -108.19    127.56      79.5      ~~~~
+ASG  VAL F   17   17    T          Turn    -79.66    167.44      68.1      ~~~~
+ASG  VAL F   18   18    T          Turn    -52.46    -43.34     112.7      ~~~~
+ASG  VAL F   19   19    T          Turn    -65.43    -30.03      69.2      ~~~~
+ASG  VAL F   20   20    G      310Helix    -51.02    -46.48       4.2      ~~~~
+ASG  VAL F   21   21    G      310Helix    -52.30    -34.46     106.6      ~~~~
+ASG  VAL F   22   22    G      310Helix    -79.95    -12.28     106.8      ~~~~
+ASG  VAL F   23   23    C          Coil   -129.37    160.23      53.0      ~~~~
+ASG  VAL F   24   24    C          Coil    -53.65    136.39      92.8      ~~~~
+ASG  VAL F   25   25    E        Strand    -96.92    130.94      69.8      ~~~~
+ASG  VAL F   26   26    E        Strand    -78.03    129.46      51.0      ~~~~
+ASG  VAL F   27   27    E        Strand   -108.95    132.02      99.7      ~~~~
+ASG  VAL F   28   28    E        Strand   -122.42    121.45      60.3      ~~~~
+ASG  VAL F   29   29    E        Strand    -84.37    133.88     110.2      ~~~~
+ASG  VAL F   30   30    C          Coil   -124.15    360.00      99.5      ~~~~
+REM                                                                        ~~~~
+REM  ------------------ Mainchain hydrogen bonds ------------------------  ~~~~
+REM                                                                        ~~~~
+REM  Definition of Stickle et al., J.Mol.Biol. 226:1143-1159, 1992         ~~~~
+REM  A1 is the angle between the planes of donor complex and O..N-C        ~~~~
+REM  A2 is the angle between the planes of acceptor complex and N..O=C     ~~~~
+REM                                                                        ~~~~
+HBT  12                                                                    ~~~~
+HBI  0                                                                     ~~~~
+HBC  12      LX1_E6_LGG_E6_LX8_E6_LX1100.pdb F   30                        ~~~~
+REM                                                                        ~~~~
+REM  |--Residue 1--|     |--Residue 2--|  N-O N..O=C O..N-C     A1     A2  ~~~~
+ACC  VAL F    3    2 ->  VAL F   26   25  3.0  126.7  136.6   38.0   44.7  ~~~~
+DNR  VAL F    5    4 ->  VAL F   26   25  3.1  160.1  113.8   43.0   86.2  ~~~~
+ACC  VAL F    5    4 ->  VAL F   28   27  3.3  123.2  139.2   36.0   68.3  ~~~~
+DNR  VAL F    6    5 ->  VAL F   13   12  3.1  152.1  132.5    4.1   76.2  ~~~~
+ACC  VAL F    6    5 ->  VAL F   13   12  3.0  155.7  127.5   27.3   66.3  ~~~~
+DNR  VAL F    7    6 ->  VAL F   28   27  3.3  167.0  105.7    6.2   56.8  ~~~~
+ACC  VAL F    7    6 ->  VAL F   30   29  3.1  148.7  139.1   14.0   38.3  ~~~~
+DNR  VAL F    8    7 ->  VAL F   11   10  3.0  159.2   98.1   21.0   20.7  ~~~~
+ACC  VAL F    8    7 ->  VAL F   11   10  3.1  119.2  126.1   12.8   85.7  ~~~~
+DNR  VAL F   11   10 ->  VAL F    8    7  3.1  119.2  126.1   12.8   85.7  ~~~~
+ACC  VAL F   11   10 ->  VAL F    8    7  3.0  159.2   98.1   21.0   20.7  ~~~~
+DNR  VAL F   13   12 ->  VAL F    6    5  3.0  155.7  127.5   27.3   66.3  ~~~~
+ACC  VAL F   13   12 ->  VAL F    6    5  3.1  152.1  132.5    4.1   76.2  ~~~~
+ACC  VAL F   17   16 ->  VAL F   20   19  3.2  121.0  120.6   35.7   89.1  ~~~~
+ACC  VAL F   19   18 ->  VAL F   22   21  3.2  133.8  125.2   37.1   72.9  ~~~~
+DNR  VAL F   20   19 ->  VAL F   17   16  3.2  121.0  120.6   35.7   89.1  ~~~~
+ACC  VAL F   20   19 ->  VAL F   23   22  3.0  123.7  130.8   23.8   87.4  ~~~~
+DNR  VAL F   22   21 ->  VAL F   19   18  3.2  133.8  125.2   37.1   72.9  ~~~~
+DNR  VAL F   23   22 ->  VAL F   20   19  3.0  123.7  130.8   23.8   87.4  ~~~~
+DNR  VAL F   26   25 ->  VAL F    3    2  3.0  126.7  136.6   38.0   44.7  ~~~~
+ACC  VAL F   26   25 ->  VAL F    5    4  3.1  160.1  113.8   43.0   86.2  ~~~~
+DNR  VAL F   28   27 ->  VAL F    5    4  3.3  123.2  139.2   36.0   68.3  ~~~~
+ACC  VAL F   28   27 ->  VAL F    7    6  3.3  167.0  105.7    6.2   56.8  ~~~~
+DNR  VAL F   30   29 ->  VAL F    7    6  3.1  148.7  139.1   14.0   38.3  ~~~~
